@@ -10,6 +10,8 @@ DemoApp::Application.routes.draw do
 
   get "static_pages/contact"
 
+  match '/signup', to: 'users#new'
+
   resources :microposts
 
   resources :users
